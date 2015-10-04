@@ -1,0 +1,92 @@
+organizations:
+  - &organization-red-waggin-rescue
+    name: Red Waggin' Rescue
+    type: Dog Rescue
+    type_slug: rescue
+    url: http://www.seattlefoundation.org/npos/Pages/RedWagginRescue.aspx
+  - &organization-ahimsa-dog-training
+    name: Ahimsa Dog Training
+    type: Dog Training
+    type_slug: training
+    url: http://ahimsadogtraining.com
+  - &organization-wisdom-panel
+    name: Wisdom Panel
+    type: Dog Breed DNA Testing
+    type_slug: dna
+    url: http://www.wisdompanel.com
+  - &organization-seattle-animal-shelter
+    name: Seattle Animal Shelter
+    type: Animal Shelter
+    type_slug: shelter
+    url: http://www.seattleanimalshelter.org
+  - &organization-home-again
+    name: HomeAgain
+    type: Microchip Provider
+    type_slug: microchip
+    url: http://www.homeagain.com/
+
+people:
+  - &person-randall-morey
+    name: Randall Morey
+    relationship: owner
+  - &person-fernando-gelin
+    name: Fernando Gelin
+    relationship: owner
+
+bio:
+  first_name: Kody
+  last_name: Morey-Gelin
+  birthdate: 2014-02-10
+  sex: male
+  neutered: true
+  height:
+    value: 47
+    units: cm
+  weight:
+    value: 17
+    units: kg
+  breed:
+    primary: English Springer Spaniel
+    secondary: Pomaranian
+    tertiary: Curly Coated Retriever
+    report:
+      url: http://rv.wisdompanel.com/Reports/MzAwODIwMTRcMzU0MjM0OVwzNTQyMzQ5LXdv.pdf
+      authority:
+        <<: *organization-wisdom-panel
+  coat:
+    length: medium-long
+    markings:
+      - saddle
+      - mask
+    colors:
+      - name: red
+        hex: A26020
+      - name: fawn
+        hex: EDBA6A
+      - name: black
+        hex: 1A1A1A
+      - name: white
+        hex: F1F0EE
+  eyes:
+    colors:
+      - name: amber
+        hex: D5973E
+  temperament:
+    - eager
+    - enthusiastic
+    - intelligent
+    - friendly
+    - outgoing
+    - curious
+    - independent
+  energy: high
+  microchip:
+    id: 985112003366608
+    provider:
+      <<: *organization-home-again
+  license:
+    id: 731640
+    provider:
+      <<: *organization-seattle-animal-shelter
+  rescue:
+    <<: *organization-red-waggin-rescue
