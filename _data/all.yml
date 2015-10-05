@@ -1,28 +1,23 @@
 organizations:
   - &organization-red-waggin-rescue
     name: Red Waggin' Rescue
-    type: Dog Rescue
-    type_slug: rescue
+    type: dog rescue
     url: http://www.seattlefoundation.org/npos/Pages/RedWagginRescue.aspx
   - &organization-ahimsa-dog-training
     name: Ahimsa Dog Training
-    type: Dog Training
-    type_slug: training
+    type: dog training
     url: http://ahimsadogtraining.com
   - &organization-wisdom-panel
     name: Wisdom Panel
-    type: Dog Breed DNA Testing
-    type_slug: dna
+    type: dog breed DNA testing
     url: http://www.wisdompanel.com
   - &organization-seattle-animal-shelter
     name: Seattle Animal Shelter
-    type: Animal Shelter
-    type_slug: shelter
+    type: animal shelter
     url: http://www.seattleanimalshelter.org
   - &organization-home-again
     name: HomeAgain
-    type: Microchip Provider
-    type_slug: microchip
+    type: microchip provider
     url: http://www.homeagain.com/
 
 people:
@@ -90,3 +85,153 @@ bio:
       <<: *organization-seattle-animal-shelter
   rescue:
     <<: *organization-red-waggin-rescue
+
+activities:
+  - name: bathing
+    interest: 1
+  - name: people-watching
+    interest: 3
+  - name: brushing teeth
+    interest: 3
+  - name: toys
+    interest: 4
+  - name: sock-stealing
+    interest: 5
+  - name: cuddling
+    interest: 5
+  - name: running
+    interest: 7
+  - name: finding hidden objects
+    interest: 7
+  - name: visiting dog park
+    interest: 7
+  - name: learning
+    interest: 7
+  - name: sleeping
+    interest: 7
+  - name: meeting new people
+    interest: 8
+  - name: swimming
+    interest: 9
+  - name: sniffing
+    interest: 9
+  - name: investigating environment
+    interest: 10
+
+commands:
+  - name: drop it
+    description: drop object from mouth
+    proficiency: 0
+    reliability_treats: 0
+    reliability_no_treats: 0
+  - name: leave it
+    description: ignore object of interest
+    proficiency: 5
+    reliability_treats: 6
+    reliability_no_treats: 2
+  - name: paw
+    description: place paw in human hand
+    gesture: open palm or lifted foot
+    proficiency: 6
+    reliability_treats: 7
+    reliability_no_treats: 5
+  - name: other paw
+    description: place opposite paw in human hand
+    gesture: open opposite palm or lifted opposite foot
+    proficiency: 8
+    reliability_treats: 8
+    reliability_no_treats: 8
+  - name: touch
+    description: touch nose to human hand
+    gesture: place hand anywhere in space at dog height
+    proficiency: 7
+    reliability_treats: 9
+    reliability_no_treats: 7
+  - name: around
+    description: walk around human or object
+    gesture: point, left to right
+    proficiency: 7
+    reliability_treats: 7
+    reliability_no_treats: 4
+  - name: stay
+    description: wait in place until release
+    gesture: stop
+    proficiency: 8
+    reliability_treats: 10
+    reliability_no_treats: 6
+  - name: find it
+    description: search for object
+    note: requires treat or object to find
+    proficiency: 8
+    reliability_treats: 10
+  - name: squirrel
+    description: sit straight up on hind end, forelimbs at front
+    note: known to many other dogs as "sit pretty"
+    proficiency: 9
+    reliability_treats: 10
+    reliability_no_treats: 7
+  - name: down
+    description: lay down in place
+    gesture: point down
+    proficiency: 9
+    reliability_treats: 9
+    reliability_no_treats: 7
+  - name: come
+    description: go to issuer
+    gesture: palms to quadriceps
+    note: must not be distracted
+    proficiency: 10
+    reliability_treats: 9
+    reliability_no_treats: 9
+  - name: wait
+    description: wait in place until release
+    gesture: stop
+    proficiency: 10
+    reliability_treats: 8
+    reliability_no_treats: 7
+  - name: up
+    description: get onto object
+    gesture: point
+    proficiency: 10
+    reliability_treats: 8
+    reliability_no_treats: 6
+  - name: off
+    description: get off object
+    gesture: point
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 10
+  - name: roll over
+    description: rotate about horizontal plane
+    gesture: open palm swipe, right to left
+    note: requires "down" command first
+    proficiency: 10
+    reliability_treats: 7
+    reliability_no_treats: 4
+  - name: jump
+    description: jump over object
+    gesture: point; outstretched leg (optional)
+    note: >
+      may be used with arbitrary objects (point) or
+      with human leg (outstretched leg)
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 8
+  - name: sit
+    description: sit in place
+    gesture: raise forearm
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 10
+  - name: ok
+    description: release
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 10
+  - name: all done
+    description: discontinue current activity
+    gesture: dual-hand wave, oustretched fingers
+    note: >
+      non-command communication indicates end of
+      current interaction with human; use at
+      end of training or play session
