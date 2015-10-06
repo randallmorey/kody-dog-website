@@ -197,6 +197,27 @@ commands:
     proficiency: 7
     reliability_treats: 7
     reliability_no_treats: 4
+  - name: go to your bed
+    description: go to nearest soft surface
+    gesture: point
+    note: >
+      dynamically interpreted at dog's discretion; any nearby soft surface may
+      be selected
+    proficiency: 7
+    reliability_treats: 6
+    reliability_no_treats: 4
+  - name: heel
+    description: walk next to human
+    gesture: open palm at side
+    proficiency: 7
+    reliability_treats: 6
+    reliability_no_treats: 4
+  - name: switch
+    description: walk on opposite side of human
+    note: requires heel
+    proficiency: 8
+    reliability_treats: 7
+    reliability_no_treats: 5
   - name: stay
     description: wait in place until release
     gesture: stop
