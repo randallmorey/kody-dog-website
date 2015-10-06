@@ -18,7 +18,11 @@ organizations:
   - &organization-home-again
     name: HomeAgain
     type: microchip provider
-    url: http://www.homeagain.com/
+    url: http://www.homeagain.com
+  - &organization-american-kennel-club
+    name: American Kennel Club
+    type: dog breed authority
+    url: http://www.akc.org
 
 people:
   - &person-randall-morey
@@ -27,6 +31,45 @@ people:
   - &person-fernando-gelin
     name: Fernando Gelin
     relationship: owner
+
+breeds:
+  - &breed-english-springer-spaniel
+    name: English Springer Spaniel
+    url: http://www.akc.org/dog-breeds/english-springer-spaniel/
+    group: sporting
+    description: >
+      Friendly, playful, obedient at home; hardworking and steady in the field.
+    personality:
+      - friendly
+      - playful
+      - obedient
+    authority:
+      <<: *organization-american-kennel-club
+  - &breed-pomeranian
+    name: Pomeranian
+    url: http://www.akc.org/dog-breeds/pomeranian/
+    group: toy
+    description: >
+      Pomeranians are very intelligent dogs that love to please.
+    personality:
+      - lively
+      - bold
+      - inquisitive
+    authority:
+      <<: *organization-american-kennel-club
+  - &breed-curly-coated-retriever
+    name: Curly-Coated Retriever
+    url: http://www.akc.org/dog-breeds/curly-coated-retriever/
+    group: sporting
+    description: >
+      An energetic and intelligent dog, the Curly-Coated Retriever is an
+      excellent companion for an active family.
+    personality:
+      - confident
+      - proud
+      - wickedly smart
+    authority:
+      <<: *organization-american-kennel-club
 
 bio:
   first_name: Kody
@@ -41,9 +84,10 @@ bio:
     value: 17
     units: kg
   breed:
-    primary: English Springer Spaniel
-    secondary: Pomaranian
-    tertiary: Curly Coated Retriever
+    breeds:
+      - <<: *breed-english-springer-spaniel
+      - <<: *breed-pomeranian
+      - <<: *breed-curly-coated-retriever
     report:
       url: http://rv.wisdompanel.com/Reports/MzAwODIwMTRcMzU0MjM0OVwzNTQyMzQ5LXdv.pdf
       authority:
