@@ -31,6 +31,21 @@ people:
   - &person-fernando-gelin
     name: Fernando Gelin
     relationship: owner
+  - &person-wynona-karbo
+    name: Wynona Karbo
+    relationship: trainer
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - &person-adriane-villanueva
+    name: Adriane Villanueva
+    reliationship: trainer
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - &person-amber-hardin
+    name: Amber Hardin
+    relationship: trainer
+    organization:
+      <<: *organization-ahimsa-dog-training
 
 breeds:
   - &breed-english-springer-spaniel
@@ -300,3 +315,37 @@ commands:
       non-command communication indicates end of
       current interaction with human; use at
       end of training or play session
+
+education:
+  - class: Puppy Elementary
+    type: class
+    graduation: 2014-10-03
+    instructor:
+      <<: *person-wynona-karbo
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: Junior High
+    type: class
+    graduation: 2014-12-14
+    instructor:
+      <<: *person-wynona-karbo
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: Sports & Games
+    type: drop-in
+    instructor:
+      <<: *person-adriane-villanueva
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: Intermediate/Advanced Manners
+    type: class
+    instructor:
+      <<: *person-amber-hardin
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: CUBAT (Control Unleashed + BAT 1)
+    type: class
+    instructor:
+      <<: *person-wynona-karbo
+    organization:
+      <<: *organization-ahimsa-dog-training
