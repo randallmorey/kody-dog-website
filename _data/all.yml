@@ -7,10 +7,6 @@ organizations:
     name: Ahimsa Dog Training
     type: dog training
     url: http://ahimsadogtraining.com
-  - &organization-wisdom-panel
-    name: Wisdom Panel
-    type: dog breed DNA testing
-    url: http://www.wisdompanel.com
   - &organization-seattle-animal-shelter
     name: Seattle Animal Shelter
     type: animal shelter
@@ -23,6 +19,52 @@ organizations:
     name: American Kennel Club
     type: dog breed authority
     url: http://www.akc.org
+  - &organization-trupanion
+    name: Trupanion
+    type: insurance
+    url: http://trupanion.com
+  - &organization-wisdom-panel
+    name: Wisdom Panel
+    type: dog breed DNA testing
+    url: http://www.wisdompanel.com
+  - &organization-elanco
+    name: Elanco
+    type: animal health
+    url: https://www.elanco.com
+  - &organization-healthy-mouth
+    name: Healthy Mouth
+    type: animal dental health
+    url: https://www.healthymouth.com
+
+products:
+  - &product-trifexis
+    name: Trifexis
+    subtitle: spinosad + milbemycin oxime
+    description: >
+      Prevents heartworm disease.  Kills fleas & prevents infestations.  Treats
+      and controls intestinal worms.
+    type: medicine
+    maker:
+      <<: *organization-elanco
+    url: http://www.trifexis.com
+  - &product-fortiflora
+    name: FortiFlora
+    subtitle: canine probiotic supplement
+    description: >
+      Probiotic supplement for dogs, proven to promote intestinal and immune
+      health and balance.
+    type: supplement
+    maker:
+      <<: *organization-purina
+    url: https://www.purinaveterinarydiets.com/pet-food-nutrition/canine/products/fortiflora/
+  - &product-healthy-mouth
+    name: Healthy Mouth
+    subtitle: daily dental care concentrate
+    description: Clinically proven to reduce plaque that leads to gun disease.
+    type: dental supplement
+    maker:
+      <<: *organization-healthy-mouth
+    url: https://www.healthymouth.com/Articles.asp?ID=246
 
 people:
   - &person-randall-morey
@@ -349,3 +391,30 @@ education:
       <<: *person-wynona-karbo
     organization:
       <<: *organization-ahimsa-dog-training
+
+medical:
+  general_health: excellent
+  insurance:
+    provider:
+      <<: *organization-trupanion
+    policy_number: TU0001816531
+  conditions: []
+  prescriptions:
+    - <<: *product-trifexis
+      dosage:
+        amount: 1
+        unit: 810mg spinosad, 13.5mg milbemycin oxime tablet for dogs 40.1–60lbs
+        frequency: once monthly
+    - <<: *product-fortiflora
+      dosage:
+        amount: 1
+        unit: g
+        frequency: once daily
+      instructions: Sprinkle one packet on food daily.
+    - <<: *product-healthy-mouth
+      dosage:
+        amount: 5
+        unit: ml per l
+        freqency: continuous
+      instructions: >
+        Mix continuously with normal watering for maximum dental benefit.
