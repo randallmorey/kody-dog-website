@@ -31,10 +31,29 @@ organizations:
     name: Elanco
     type: animal health
     url: https://www.elanco.com
+  - &organization-purina
+    name: Purina
+    type: animal food
+    url: https://www.purina.com
   - &organization-healthy-mouth
     name: Healthy Mouth
     type: animal dental health
     url: https://www.healthymouth.com
+  - &organization-sunset-hill
+    name: Sunset Hill Veterinary & Rehabilitation Center
+    type: animal clinic
+    url: http://sunsethillvet.com
+  - &organization-blue-pearl
+    name: Blue Pearl
+    type: emergency animal hospital
+    url: http://www.criticalcarevets.com
+    phone: 206 364 1660
+    address:
+      street_address: 11536 Lake City Way NE
+      locality: Seattle
+      region: WA
+      postal_code: 98125
+      country_name: United States of America
 
 products:
   - &product-trifexis
@@ -136,10 +155,10 @@ bio:
   neutered: true
   height:
     value: 47
-    units: cm
+    unit: cm
   weight:
     value: 17
-    units: kg
+    unit: kg
   breed:
     breeds:
       - <<: *breed-english-springer-spaniel
@@ -398,12 +417,15 @@ medical:
     provider:
       <<: *organization-trupanion
     policy_number: TU0001816531
+  emergency:
+    provider:
+      <<: *organization-blue-pearl
   conditions: []
   prescriptions:
     - <<: *product-trifexis
       dosage:
         amount: 1
-        unit: 810mg spinosad, 13.5mg milbemycin oxime tablet for dogs 40.1–60lbs
+        unit: tablet for dogs 40.1–60lbs
         frequency: once monthly
     - <<: *product-fortiflora
       dosage:
@@ -416,5 +438,75 @@ medical:
         amount: 5
         unit: ml per l
         freqency: continuous
-      instructions: >
-        Mix continuously with normal watering for maximum dental benefit.
+      instructions: Mix continuously with drinking watering.
+  vaccinations:
+    certificate: "?"
+    all:
+      - name: Rabies
+        date: 2015-08-25
+        due: 2018-08-24
+        period:
+          value: 3
+          unit: year
+      - name: Bordatella
+        date: 2015-08-25
+        due: 2016-08-24
+        period:
+          value: 1
+          unit: year
+      - name: Leptospirosis
+        date: 2015-08-25
+        due: 2016-08-24
+        period:
+          value: 1
+          unit: year
+      - name: DHPP (Distemper, Hepatits, Parvo, and Parainfluenza)
+        date: 2015-08-25
+        due: 2018-08-24
+        period:
+          value: 3
+          unit: year
+      - name: Dewormer
+        date: 2015-08-25
+        due: 2016-08-24
+        period:
+          value: 1
+          unit: year
+
+content_modules:
+  care_feeding:
+    title: Care and Feeding
+    description: >
+      Maintaining diet, exercise, and dental health is easy.  Kody eats 3
+      meals a day, just like his human stewards.  He enjoys running, swimming,
+      and playing at dog parks 2&ndash;4 times per week.  And while he merely
+      tolerates it, brushing his teeth 3 times a week helps maintain optimal
+      dental health.
+  medical:
+    title: Medical
+    description: >
+      Kody is young, fit, and healthy, with no medical conditions.  He is fully
+      insured.  He visits his veterinarian at least once a year.  And while we
+      hope for the best, we've planned for the worst; in the event of a medical
+      emergency, call the number provided.
+  vaccinations:
+    title: Fully Vaccinated
+    description: >
+      Kody is fully vaccinated and ready to socialize!  Kody has been fully
+      vaccinated at all times since at least 5 months old, the approximate age
+      at which he was rescued.
+  training:
+    title: Whip Smart Working Dog
+    description: >
+      When it comes to training, Kody is exceptionally focussed and
+      enthusiastic.  Kody is highly food motivated and thus easy to train.  He
+      loves performing tasks too, one of his favorites being sniffing out hidden
+      objects.  Kody makes a goofy, outgoing, and example-setting addition to
+      any training classroom.
+  social:
+    title: Kody on Social Media
+    description: >
+      Kody is always doing adorable things for the camera!  Check out his
+      Instagram photos.  Have some pix to contribute?  Post them on Instagram
+      using Kody's exclusive hashtag.  Looking for Kody's Facebook page?  Sorry,
+      he has better things to do, like living IRL.
