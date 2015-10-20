@@ -1,11 +1,12 @@
 # Site settings
-title: Kody the Dog
+title: Kody Morey-Gelin
 email: info@kody.dog
-description: >
-  The website of Kody the dog.
+phone: 855 912 6900
+description: The website of Kody Morey-Gelin.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kody.dog" # the base hostname & protocol for your site
 #twitter_username: kodydog
+instagram_hashtag: "#kodydotdog"
 
 # Build settings
 markdown: kramdown
