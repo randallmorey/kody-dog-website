@@ -474,6 +474,10 @@ medical:
           unit: year
 
 content_modules:
+  identifying_characteristic:
+    - name: breeds
+    - name: coat and eye colors
+    - name: license ID
   care_feeding:
     title: Care and Feeding
     description: >
@@ -486,9 +490,9 @@ content_modules:
     title: Medical
     description: >
       Kody is young, fit, and healthy, with no medical conditions.  He is fully
-      insured.  He visits his veterinarian at least once a year.  And while we
+      insured.  He visits his veterinarian at least once per year.  And while we
       hope for the best, we've planned for the worst; in the event of a medical
-      emergency, call the number provided.
+      emergency, call the emergency animal hospital at the number provided.
   vaccinations:
     title: Fully Vaccinated
     description: >
@@ -507,6 +511,5 @@ content_modules:
     title: Kody on Social Media
     description: >
       Kody is always doing adorable things for the camera!  Check out his
-      Instagram photos.  Have some pix to contribute?  Post them on Instagram
-      using Kody's exclusive hashtag.  Looking for Kody's Facebook page?  Sorry,
-      he has better things to do, like living IRL.
+      Instagram photos.  Have some pictures to contribute?  Post them on Instagram
+      using #kodydotdog
