@@ -1,0 +1,515 @@
+organizations:
+  - &organization-red-waggin-rescue
+    name: Red Waggin' Rescue
+    type: dog rescue
+    url: http://www.seattlefoundation.org/npos/Pages/RedWagginRescue.aspx
+  - &organization-ahimsa-dog-training
+    name: Ahimsa Dog Training
+    type: dog training
+    url: http://ahimsadogtraining.com
+  - &organization-seattle-animal-shelter
+    name: Seattle Animal Shelter
+    type: animal shelter
+    url: http://www.seattleanimalshelter.org
+  - &organization-home-again
+    name: HomeAgain
+    type: microchip provider
+    url: http://www.homeagain.com
+  - &organization-american-kennel-club
+    name: American Kennel Club
+    type: dog breed authority
+    url: http://www.akc.org
+  - &organization-trupanion
+    name: Trupanion
+    type: insurance
+    url: http://trupanion.com
+  - &organization-wisdom-panel
+    name: Wisdom Panel
+    type: dog breed DNA testing
+    url: http://www.wisdompanel.com
+  - &organization-elanco
+    name: Elanco
+    type: animal health
+    url: https://www.elanco.com
+  - &organization-purina
+    name: Purina
+    type: animal food
+    url: https://www.purina.com
+  - &organization-healthy-mouth
+    name: Healthy Mouth
+    type: animal dental health
+    url: https://www.healthymouth.com
+  - &organization-sunset-hill
+    name: Sunset Hill Veterinary & Rehabilitation Center
+    type: animal clinic
+    url: http://sunsethillvet.com
+  - &organization-blue-pearl
+    name: Blue Pearl
+    type: emergency animal hospital
+    url: http://www.criticalcarevets.com
+    phone: 206 364 1660
+    address:
+      street_address: 11536 Lake City Way NE
+      locality: Seattle
+      region: WA
+      postal_code: 98125
+      country_name: United States of America
+
+products:
+  - &product-trifexis
+    name: Trifexis
+    subtitle: spinosad + milbemycin oxime
+    description: >
+      Prevents heartworm disease.  Kills fleas & prevents infestations.  Treats
+      and controls intestinal worms.
+    type: medicine
+    maker:
+      <<: *organization-elanco
+    url: http://www.trifexis.com
+  - &product-fortiflora
+    name: FortiFlora
+    subtitle: canine probiotic supplement
+    description: >
+      Probiotic supplement for dogs, proven to promote intestinal and immune
+      health and balance.
+    type: supplement
+    maker:
+      <<: *organization-purina
+    url: https://www.purinaveterinarydiets.com/pet-food-nutrition/canine/products/fortiflora/
+  - &product-healthy-mouth
+    name: Healthy Mouth
+    subtitle: daily dental care concentrate
+    description: Clinically proven to reduce plaque that leads to gun disease.
+    type: dental supplement
+    maker:
+      <<: *organization-healthy-mouth
+    url: https://www.healthymouth.com/Articles.asp?ID=246
+
+people:
+  - &person-randall-morey
+    name: Randall Morey
+    relationship: owner
+  - &person-fernando-gelin
+    name: Fernando Gelin
+    relationship: owner
+  - &person-wynona-karbo
+    name: Wynona Karbo
+    relationship: trainer
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - &person-adriane-villanueva
+    name: Adriane Villanueva
+    reliationship: trainer
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - &person-amber-hardin
+    name: Amber Hardin
+    relationship: trainer
+    organization:
+      <<: *organization-ahimsa-dog-training
+
+breeds:
+  - &breed-english-springer-spaniel
+    name: English Springer Spaniel
+    url: http://www.akc.org/dog-breeds/english-springer-spaniel/
+    group: sporting
+    description: >
+      Friendly, playful, obedient at home; hardworking and steady in the field.
+    personality:
+      - friendly
+      - playful
+      - obedient
+    authority:
+      <<: *organization-american-kennel-club
+  - &breed-pomeranian
+    name: Pomeranian
+    url: http://www.akc.org/dog-breeds/pomeranian/
+    group: toy
+    description: >
+      Pomeranians are very intelligent dogs that love to please.
+    personality:
+      - lively
+      - bold
+      - inquisitive
+    authority:
+      <<: *organization-american-kennel-club
+  - &breed-curly-coated-retriever
+    name: Curly-Coated Retriever
+    url: http://www.akc.org/dog-breeds/curly-coated-retriever/
+    group: sporting
+    description: >
+      An energetic and intelligent dog, the Curly-Coated Retriever is an
+      excellent companion for an active family.
+    personality:
+      - confident
+      - proud
+      - wickedly smart
+    authority:
+      <<: *organization-american-kennel-club
+
+bio:
+  first_name: Kody
+  last_name: Morey-Gelin
+  birthdate: 2014-02-10
+  sex: male
+  neutered: true
+  height:
+    value: 47
+    unit: cm
+  weight:
+    value: 17
+    unit: kg
+  breed:
+    breeds:
+      - <<: *breed-english-springer-spaniel
+      - <<: *breed-pomeranian
+      - <<: *breed-curly-coated-retriever
+    report:
+      url: http://rv.wisdompanel.com/Reports/MzAwODIwMTRcMzU0MjM0OVwzNTQyMzQ5LXdv.pdf
+      authority:
+        <<: *organization-wisdom-panel
+  coat:
+    length: medium-long
+    markings:
+      - saddle
+      - mask
+    colors:
+      - name: red
+        hex: A26020
+      - name: fawn
+        hex: EDBA6A
+      - name: black
+        hex: 1A1A1A
+      - name: white
+        hex: F1F0EE
+  eyes:
+    colors:
+      - name: amber
+        hex: D5973E
+  temperament:
+    - eager
+    - enthusiastic
+    - intelligent
+    - friendly
+    - outgoing
+    - curious
+    - independent
+  energy: high
+  microchip:
+    id: 985112003366608
+    provider:
+      <<: *organization-home-again
+  license:
+    id: 731640
+    provider:
+      <<: *organization-seattle-animal-shelter
+  rescue:
+    <<: *organization-red-waggin-rescue
+
+activities:
+  - name: bathing
+    interest: 1
+  - name: people-watching
+    interest: 3
+  - name: brushing teeth
+    interest: 3
+  - name: toys
+    interest: 4
+  - name: sock-stealing
+    interest: 5
+  - name: cuddling
+    interest: 5
+  - name: running
+    interest: 7
+  - name: finding hidden objects
+    interest: 7
+  - name: visiting dog park
+    interest: 7
+  - name: learning
+    interest: 7
+  - name: sleeping
+    interest: 7
+  - name: meeting new people
+    interest: 8
+  - name: swimming
+    interest: 9
+  - name: sniffing
+    interest: 9
+  - name: investigating environment
+    interest: 10
+
+commands:
+  - name: drop it
+    description: drop object from mouth
+    proficiency: 0
+    reliability_treats: 0
+    reliability_no_treats: 0
+  - name: leave it
+    description: ignore object of interest
+    proficiency: 5
+    reliability_treats: 6
+    reliability_no_treats: 2
+  - name: paw
+    description: place paw in human hand
+    gesture: open palm or lifted foot
+    proficiency: 6
+    reliability_treats: 7
+    reliability_no_treats: 5
+  - name: other paw
+    description: place opposite paw in human hand
+    gesture: open opposite palm or lifted opposite foot
+    proficiency: 8
+    reliability_treats: 8
+    reliability_no_treats: 8
+  - name: touch
+    description: touch nose to human hand
+    gesture: place hand anywhere in space at dog height
+    proficiency: 7
+    reliability_treats: 9
+    reliability_no_treats: 7
+  - name: around
+    description: walk around human or object
+    gesture: point, left to right
+    proficiency: 7
+    reliability_treats: 7
+    reliability_no_treats: 4
+  - name: go to your bed
+    description: go to nearest soft surface
+    gesture: point
+    note: >
+      dynamically interpreted at dog's discretion; any nearby soft surface may
+      be selected
+    proficiency: 7
+    reliability_treats: 6
+    reliability_no_treats: 4
+  - name: heel
+    description: walk next to human
+    gesture: open palm at side
+    proficiency: 7
+    reliability_treats: 6
+    reliability_no_treats: 4
+  - name: switch
+    description: walk on opposite side of human
+    note: requires heel
+    proficiency: 8
+    reliability_treats: 7
+    reliability_no_treats: 5
+  - name: stay
+    description: wait in place until release
+    gesture: stop
+    proficiency: 8
+    reliability_treats: 10
+    reliability_no_treats: 6
+  - name: find it
+    description: search for object
+    note: requires treat or object to find
+    proficiency: 8
+    reliability_treats: 10
+  - name: squirrel
+    description: sit straight up on hind end, forelimbs at front
+    note: known to many other dogs as "sit pretty"
+    proficiency: 9
+    reliability_treats: 10
+    reliability_no_treats: 7
+  - name: down
+    description: lay down in place
+    gesture: point down
+    proficiency: 9
+    reliability_treats: 9
+    reliability_no_treats: 7
+  - name: come
+    description: go to issuer
+    gesture: palms to quadriceps
+    note: must not be distracted
+    proficiency: 10
+    reliability_treats: 9
+    reliability_no_treats: 9
+  - name: wait
+    description: wait in place until release
+    gesture: stop
+    proficiency: 10
+    reliability_treats: 8
+    reliability_no_treats: 7
+  - name: up
+    description: get onto object
+    gesture: point
+    proficiency: 10
+    reliability_treats: 8
+    reliability_no_treats: 6
+  - name: off
+    description: get off object
+    gesture: point
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 10
+  - name: roll over
+    description: rotate about horizontal plane
+    gesture: open palm swipe, right to left
+    note: requires "down" command first
+    proficiency: 10
+    reliability_treats: 7
+    reliability_no_treats: 4
+  - name: jump
+    description: jump over object
+    gesture: point; outstretched leg (optional)
+    note: >
+      may be used with arbitrary objects (point) or
+      with human leg (outstretched leg)
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 8
+  - name: sit
+    description: sit in place
+    gesture: raise forearm
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 10
+  - name: ok
+    description: release
+    proficiency: 10
+    reliability_treats: 10
+    reliability_no_treats: 10
+  - name: all done
+    description: discontinue current activity
+    gesture: dual-hand wave, oustretched fingers
+    note: >
+      non-command communication indicates end of
+      current interaction with human; use at
+      end of training or play session
+
+education:
+  - class: Puppy Elementary
+    type: class
+    graduation: 2014-10-03
+    instructor:
+      <<: *person-wynona-karbo
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: Junior High
+    type: class
+    graduation: 2014-12-14
+    instructor:
+      <<: *person-wynona-karbo
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: Sports & Games
+    type: drop-in
+    instructor:
+      <<: *person-adriane-villanueva
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: Intermediate/Advanced Manners
+    type: class
+    instructor:
+      <<: *person-amber-hardin
+    organization:
+      <<: *organization-ahimsa-dog-training
+  - class: CUBAT (Control Unleashed + BAT 1)
+    type: class
+    instructor:
+      <<: *person-wynona-karbo
+    organization:
+      <<: *organization-ahimsa-dog-training
+
+medical:
+  general_health: excellent
+  insurance:
+    provider:
+      <<: *organization-trupanion
+    policy_number: TU0001816531
+  emergency:
+    provider:
+      <<: *organization-blue-pearl
+  conditions: []
+  prescriptions:
+    - <<: *product-trifexis
+      dosage:
+        amount: 1
+        unit: tablet for dogs 40.1–60lbs
+        frequency: once monthly
+    - <<: *product-fortiflora
+      dosage:
+        amount: 1
+        unit: g
+        frequency: once daily
+      instructions: Sprinkle one packet on food daily.
+    - <<: *product-healthy-mouth
+      dosage:
+        amount: 5
+        unit: ml per l
+        freqency: continuous
+      instructions: Mix continuously with drinking watering.
+  vaccinations:
+    certificate: "?"
+    all:
+      - name: Rabies
+        date: 2015-08-25
+        due: 2018-08-24
+        period:
+          value: 3
+          unit: year
+      - name: Bordatella
+        date: 2015-08-25
+        due: 2016-08-24
+        period:
+          value: 1
+          unit: year
+      - name: Leptospirosis
+        date: 2015-08-25
+        due: 2016-08-24
+        period:
+          value: 1
+          unit: year
+      - name: DHPP (Distemper, Hepatits, Parvo, and Parainfluenza)
+        date: 2015-08-25
+        due: 2018-08-24
+        period:
+          value: 3
+          unit: year
+      - name: Dewormer
+        date: 2015-08-25
+        due: 2016-08-24
+        period:
+          value: 1
+          unit: year
+
+content_modules:
+  identifying_characteristic:
+    - name: breeds
+    - name: coat and eye colors
+    - name: license ID
+  care_feeding:
+    title: Care and Feeding
+    description: >
+      Maintaining diet, exercise, and dental health is easy.  Kody eats 3
+      meals a day, just like his human stewards.  He enjoys running, swimming,
+      and playing at dog parks 2&ndash;4 times per week.  And while he merely
+      tolerates it, brushing his teeth 3 times a week helps maintain optimal
+      dental health.
+  medical:
+    title: Medical
+    description: >
+      Kody is young, fit, and healthy, with no medical conditions.  He is fully
+      insured.  He visits his veterinarian at least once per year.  And while we
+      hope for the best, we've planned for the worst; in the event of a medical
+      emergency, call the emergency animal hospital at the number provided.
+  vaccinations:
+    title: Fully Vaccinated
+    description: >
+      Kody is fully vaccinated and ready to socialize!  Kody has been fully
+      vaccinated at all times since at least 5 months old, the approximate age
+      at which he was rescued.
+  training:
+    title: Whip Smart Working Dog
+    description: >
+      When it comes to training, Kody is exceptionally focussed and
+      enthusiastic.  Kody is highly food motivated and thus easy to train.  He
+      loves performing tasks too, one of his favorites being sniffing out hidden
+      objects.  Kody makes a goofy, outgoing, and example-setting addition to
+      any training classroom.
+  social:
+    title: Kody on Social Media
+    description: >
+      Kody is always doing adorable things for the camera!  Check out his
+      Instagram photos.  Have some pictures to contribute?  Post them on Instagram
+      using #kodydotdog
