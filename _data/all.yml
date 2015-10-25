@@ -501,6 +501,9 @@ content_modules:
       Kody is fully vaccinated and ready to socialize!  Kody has been fully
       vaccinated at all times since at least 5 months old, the approximate age
       at which he was rescued.
+    link:
+      label: Vaccination Certificate 2015
+      url: /pdf/2015-09-03-kody-vaccination-certificate.pdf
   training:
     title: Whip Smart Working Dog
     description: >
