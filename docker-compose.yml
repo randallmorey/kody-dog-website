@@ -4,3 +4,10 @@ jekyll:
     - ./:/srv/jekyll
   ports:
     - 4000:4000
+
+bower:
+  image: digitallyseamless/nodejs-bower-grunt
+  working_dir: '/srv/jekyll'
+  entrypoint: bower
+  volumes:
+    - ./:/srv/jekyll
