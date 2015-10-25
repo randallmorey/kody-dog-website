@@ -1,0 +1,9 @@
+<section class="typeset">
+  <h1>Kody</h1>
+  <div class="kody-icon kody-dog-face-o"></div>
+  <ul>
+    {% for item in site.data.all.bio.temperament %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section><!-- /.typeset -->

@@ -1,0 +1,27 @@
+<section class="typeset">
+  <h2>Breeds</h2>
+  <p>
+    Kody is a beautiful
+    <a href="{{ site.data.all.bio.breed.breeds.first.url }}" target="_blank">
+      {{ site.data.all.bio.breed.breeds.first.name }}
+    </a>
+    mix with
+    {% for breed in site.data.all.bio.breed.breeds %}
+      {% unless forloop.first %}
+        <a href="{{ breed.url }}" target="_blank">
+          {{ breed.name }}</a>{% if forloop.last %},{% endif %}
+        {% unless forloop.last %} and {% endunless %}
+      {% endunless %}
+    {% endfor %}
+    according to a
+    <a href="{{ site.data.all.bio.breed.report.url }}" target="_blank">
+      DNA report by
+      {{ site.data.all.bio.breed.report.authority.name }}</a>.
+    Which makes perfect sense:
+    <abbr title="{{ site.data.all.bio.breed.breeds.first.authority.name }}">
+      AKC
+    </abbr>
+    describes these breeds as
+    {% for breed in site.data.all.bio.breed.breeds %}{% unless forloop.first %}, {% endunless %}{% if forloop.last %} and {% endif %}{% for trait in breed.personality %}{% if forloop.first %}<i>{{ trait }}</i>{% endif %}{% endfor %}{% endfor %}.
+  </p>
+</section><!-- /.typeset -->

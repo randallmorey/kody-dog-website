@@ -17,6 +17,7 @@ organizations:
     url: http://www.homeagain.com
   - &organization-american-kennel-club
     name: American Kennel Club
+    abbr: AKC
     type: dog breed authority
     url: http://www.akc.org
   - &organization-trupanion
@@ -128,9 +129,9 @@ breeds:
     description: >
       Pomeranians are very intelligent dogs that love to please.
     personality:
+      - inquisitive
       - lively
       - bold
-      - inquisitive
     authority:
       <<: *organization-american-kennel-club
   - &breed-curly-coated-retriever
@@ -141,9 +142,9 @@ breeds:
       An energetic and intelligent dog, the Curly-Coated Retriever is an
       excellent companion for an active family.
     personality:
+      - wickedly smart
       - confident
       - proud
-      - wickedly smart
     authority:
       <<: *organization-american-kennel-club
 
@@ -153,6 +154,7 @@ bio:
   birthdate: 2014-02-10
   sex: male
   neutered: true
+  size: small-medium
   height:
     value: 47
     unit: cm

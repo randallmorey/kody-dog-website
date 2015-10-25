@@ -1,23 +1,27 @@
 ---
 layout: default
 ---
+<!--
+<section id="baseline" class="show-grid">
+-->
 
-<div class="home">
+{% if site.data.all.medical.emergency %}
+  {% include content-sections/emergency.html %}
+{% endif %}
 
-  <h1 class="page-heading">Posts</h1>
+{% include content-sections/header-banner.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% include content-sections/breeds.html %}
+{% include content-sections/appearance.html %}
+{% include content-sections/identification.html %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+{% include content-sections/care-feeding.html %}
+{% include content-sections/training.html %}
+{% include content-sections/vaccinations.html %}
+{% include content-sections/medical.html %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{% include content-sections/social.html %}
 
-</div>
+<!--
+</section>
+-->
