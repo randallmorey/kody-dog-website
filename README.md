@@ -6,6 +6,17 @@ The website of Kody the dog.
 - [Docker](https://www.docker.com)
 
 
+### Install Dependencies
+
+    docker-compose run --rm bower install
+
+
+### Fixing Bootstrap 4
+
+Bootstrap v4.0.0-alpha contains a bug.  To fix it, edit `bower_components/bootstrap/scss/mixins/_grid-framework.scss` line 33:
+add `!optional` at the end of the statement.
+
+
 ### Usage
 
 This website is based on [Jekyll](http://jekyllrb.com).  All Jekyll operations
