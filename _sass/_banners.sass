@@ -3,13 +3,17 @@
     margin: 0
     padding: 0
     line-height: 3rem
-  .kody-button
+  .kody-banner-button
     display: block
-    background-color: lighten($brand-danger, 10%)
 
 .kody-banner-inverse
   &, p, a
     color: #FFF
 
+.kody-banner-warning
+  background-color: $brand-warning
+
 .kody-banner-danger
   background-color: $brand-danger
+  .kody-banner-button
+    background-color: lighten($brand-danger, 10%)
