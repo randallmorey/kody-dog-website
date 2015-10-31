@@ -14,18 +14,21 @@
 </section><!-- /.typeset -->
 
 <section class="typeset">
-  <div class="kody-banner kody-banner-viewport kody-banner-warning kody-banner-inverse text-center">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Kody</h1>
-          <ul class="kody-list-unstyled kody-list-animate-slide-one">
-            {% for item in site.data.all.bio.temperament %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.kody-banner -->
-  </div><!-- /.container-fluid -->
+  <div class="kody-banner kody-banner-viewport kody-banner-primary kody-banner-warning kody-banner-inverse text-center">
+    <div class="kody-banner-primary-bg"></div>
+    <div class="kody-banner-primary-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Kody</h1>
+            <ul class="kody-list-unstyled kody-list-animate-slide-one">
+              {% for item in site.data.all.bio.temperament %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.kody-banner -->
+    </div><!-- /.container-fluid -->
+  </div><!-- /.kody-banner-primary-content -->
 </section><!-- /.typeset -->

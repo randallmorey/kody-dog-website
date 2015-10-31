@@ -13,6 +13,29 @@
   &, p, a
     color: #FFF
 
+.kody-banner-primary
+  position: relative
+  padding-top: 10rem
+  h1
+    font-size: 12rem
+    line-height: 12rem
+    color: lighten($brand-danger, 50%)
+    text-shadow: 0.5rem 0.5rem 0 rgba(0,0,0,0.15)
+
+.kody-banner-primary-bg
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 0
+  background: url("/images/kody.jpg") no-repeat 50% 15%
+  background-size: cover
+  opacity: 0.35
+
+.kody-banner-primary-content
+  z-index: 10
+
 .kody-banner-info
   background-color: $brand-info
 
