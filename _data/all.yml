@@ -419,6 +419,8 @@ medical:
     provider:
       <<: *organization-trupanion
     policy_number: TU0001816531
+  veterinarian:
+    <<: *organization-sunset-hill
   emergency:
     provider:
       <<: *organization-blue-pearl
