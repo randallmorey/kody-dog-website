@@ -13,9 +13,12 @@ instagram_access_token: 5dd7f025dec54bf497e878a233964e55
 markdown: kramdown
 
 exclude:
+  - node_modules
   - bower_components/bootstrap
   - bower_components/jquery
   - bower_components/sassline
   - bower.json
   - docker-compose.yml
   - README.md
+  - Gruntfile.coffee
+  - package.json
