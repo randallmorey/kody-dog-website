@@ -1,7 +1,18 @@
 <section class="typeset">
-  <h2>{{ site.data.all.content_modules.vaccinations.title }}</h2>
-  <p>{{ site.data.all.content_modules.vaccinations.description }}</p>
-  <a href="{{ site.data.all.content_modules.vaccinations.link.url }}" target="_blank">
-    {{ site.data.all.content_modules.vaccinations.link.label }}
-  </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5 text-center">
+        <div class="kody-icon kody-icon-xl kody-icon-circle kody-syringe-o text-center"></div>
+      </div><!-- /.col -->
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-sm-pull-1">
+        <h2 class="text-center">{{ site.data.all.content_modules.vaccinations.title }}</h2>
+        <p>{{ site.data.all.content_modules.vaccinations.description }}</p>
+        <div class="text-center">
+          <a class="btn btn-default" href="{{ site.data.all.content_modules.vaccinations.link.url }}" target="_blank">
+            {{ site.data.all.content_modules.vaccinations.link.label }}
+          </a>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
 </section><!-- /.typeset -->

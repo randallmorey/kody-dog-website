@@ -1,27 +1,25 @@
 ---
 layout: default
 ---
+
+{% include header.html %}
+
 <!--
-<section id="baseline" class="show-grid">
+<div id="baseline" class="show-grid">
 -->
+<br><br>
 
-{% if site.data.all.medical.emergency %}
-  {% include content-sections/emergency.html %}
-{% endif %}
+{% include triplex.html %}<br><br><br><br>
 
-{% include content-sections/header-banner.html %}
+{% include content-sections/training.html %}<br><br><br><br>
+{% include content-sections/care-feeding.html %}<br><br><br><br>
+{% include content-sections/vaccinations.html %}<br><br><br><br>
+{% include content-sections/medical.html %}<br><br><br><br>
 
-{% include content-sections/breeds.html %}
-{% include content-sections/appearance.html %}
-{% include content-sections/identification.html %}
+{% include content-sections/social.html %}<br><br>
 
-{% include content-sections/care-feeding.html %}
-{% include content-sections/training.html %}
-{% include content-sections/vaccinations.html %}
-{% include content-sections/medical.html %}
-
-{% include content-sections/social.html %}
+{% include footer.html %}
 
 <!--
-</section>
+</div>
 -->

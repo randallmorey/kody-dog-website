@@ -11,3 +11,18 @@ bower:
   entrypoint: bower
   volumes:
     - ./:/srv/jekyll
+
+npm:
+  image: digitallyseamless/nodejs-bower-grunt
+  working_dir: '/srv/jekyll'
+  entrypoint: npm
+  volumes:
+    - ./:/srv/jekyll
+
+grunt:
+  image: digitallyseamless/nodejs-bower-grunt
+  working_dir: '/srv/jekyll'
+  entrypoint: grunt
+  volumes:
+    - ./:/srv/jekyll
+    - ./_site/:/public

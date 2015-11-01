@@ -1,0 +1,52 @@
+.kody-banner
+  p, a
+    margin: 0
+    padding: 0
+    line-height: 3rem
+  .kody-banner-button
+    display: block
+
+.kody-banner-viewport
+  height: 100vh
+
+.kody-banner-inverse
+  background-color: #333
+  &, p, a
+    color: #FFF
+    color: rgba(255,255,255,0.85)
+
+.kody-banner-primary
+  position: relative
+  padding-top: 10rem
+  background-color: #333
+  h1
+    font-size: 12rem
+    line-height: 12rem
+    color: $brand-warning
+    text-shadow: 0.25rem 0.25rem 0 rgba(0,0,0,0.15)
+
+.kody-banner-primary-bg
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 0
+  background: url("/images/kody.jpg") no-repeat 50% 15%
+  background-size: cover
+  opacity: 0.5
+
+.kody-banner-primary-content
+  z-index: 10
+
+.kody-banner-info
+  background-color: $brand-info
+
+.kody-banner-warning
+  background-color: $brand-warning
+
+.kody-banner-danger
+  background-color: $brand-danger
+  .kody-banner-button
+    border: 0
+    background-color: lighten($brand-danger, 10%)
