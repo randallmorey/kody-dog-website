@@ -25,4 +25,3 @@ grunt:
   entrypoint: grunt
   volumes:
     - ./:/srv/jekyll
-    - ./_site/:/public
