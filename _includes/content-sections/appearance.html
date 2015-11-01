@@ -1,0 +1,14 @@
+<section class="typeset">
+  <h2>Appearance</h2>
+  <p>
+    Kody is a {{ site.data.all.bio.size }} dog,
+    {{ site.data.all.bio.height.value }}{{ site.data.all.bio.height.unit }}
+    tall at the shoulders and
+    approximately
+    {{ site.data.all.bio.weight.value }}{{ site.data.all.bio.weight.unit }}
+    in weight.
+    His {{ site.data.all.bio.coat.length }} coat is
+    {% for color in site.data.all.bio.coat.colors %}{% unless forloop.first %}, {% endunless %}{% if forloop.last %} and {% endif %}{{ color.name }}{% endfor %}.
+    His eyes are {{ site.data.all.bio.eyes.colors.first.name }}.
+  </p>
+</section><!-- /.typeset -->
