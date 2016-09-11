@@ -1,5 +1,5 @@
 jekyll:
-  image: jekyll/jekyll
+  image: jekyll/jekyll:2.5.3
   volumes:
     - ./:/srv/jekyll
   ports:
