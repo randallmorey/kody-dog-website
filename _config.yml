@@ -7,7 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kody.dog" # the base hostname & protocol for your site
 #twitter_username: kodydog
 instagram_hashtag: "#kodydotdog"
-instagram_access_token: 5dd7f025dec54bf497e878a233964e55
+instagram_user_id: 482817452
+instagram_access_token: 482817452.33e856b.baac8a33d8394a698c107b21a4b24259
 
 # Build settings
 markdown: kramdown

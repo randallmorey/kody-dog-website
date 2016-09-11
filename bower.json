@@ -14,6 +14,6 @@
   "dependencies": {
     "sassline": "2.1.0",
     "bootstrap": "git+https://github.com/twbs/bootstrap.git#v4.0.0-alpha",
-    "instafeed.js": "~1.3.2"
+    "instafeed.js": "1.4.1"
   }
 }
