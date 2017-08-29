@@ -40,11 +40,11 @@ organizations:
     name: Healthy Mouth
     type: animal dental health
     url: https://www.healthymouth.com
-  - &organization-foxboro-animal-hospital
+  - &organization-vet
     name: Foxboro Animal Hospital
     type: animal clinic
-    url: http://www.foxboroanimalhospital.com
-  - &organization-mass-ri
+    url: https://www.foxboroanimalhospital.com
+  - &organization-emergency
     name: Mass-RI Veterinary ER
     type: emergency animal hospital
     url: http://www.massriveter.com
@@ -420,10 +420,10 @@ medical:
       <<: *organization-trupanion
     policy_number: TU0001816531
   veterinarian:
-    <<: *organization-foxboro-animal-hospital
+    <<: *organization-vet
   emergency:
     provider:
-      <<: *organization-mass-ri
+      <<: *organization-emergency
   conditions: []
   prescriptions:
     - <<: *product-trifexis
@@ -444,7 +444,6 @@ medical:
         freqency: continuous
       instructions: Mix continuously with drinking watering.
   vaccinations:
-    certificate: "?"
     all:
       - name: Rabies
         date: 2015-08-25
@@ -452,27 +451,27 @@ medical:
         period:
           value: 3
           unit: year
-      - name: Bordatella
-        date: 2015-08-25
-        due: 2016-08-24
-        period:
-          value: 1
-          unit: year
-      - name: Leptospirosis
-        date: 2015-08-25
-        due: 2016-08-24
-        period:
-          value: 1
-          unit: year
       - name: DHPP (Distemper, Hepatits, Parvo, and Parainfluenza)
         date: 2015-08-25
         due: 2018-08-24
         period:
           value: 3
           unit: year
-      - name: Dewormer
-        date: 2015-08-25
-        due: 2016-08-24
+      - name: Bordatella
+        date: 2017-08-19
+        due: 2018-08-19
+        period:
+          value: 1
+          unit: year
+      - name: Leptospirosis
+        date: 2017-08-19
+        due: 2018-08-19
+        period:
+          value: 1
+          unit: year
+      - name: Borrelia (Lyme Disease)
+        date: 2017-08-19
+        due: 2018-08-19
         period:
           value: 1
           unit: year
@@ -486,41 +485,26 @@ content_modules:
     title: Whip Smart Working Dog
     description: >
       Kody is intelligent, focussed, and easy to train. He loves being in class
-      and learning new things.  After acing training and taking an advanced
-      manners class, he moved on to complete two sections of nosework.  He now
+      and learning new things. After acing training and taking an advanced
+      manners class, he moved on to complete two sections of nosework. He now
       spends his days running for hours in the Massachusetts countryside.
   care_feeding:
     title: Care and Feeding
     description: >
-      Diet, exercise, dental-, and mental-health are important.  Kody eats 5
-      meals a day.  He enjoys running, swimming, and playing at dog parks.
+      Diet, exercise, dental-, and mental-health are important. Kody eats 5
+      meals a day. He enjoys running, swimming, and playing at dog parks.
       Since moving to his rural farmhouse in 2016, he is highly active outdoors
-      several hours nearly every day.  And while he merely tolerates it,
-      brushing his teeth 3 times a week maintains optimal dental health.
+      several hours nearly every day. And while he merely tolerates it, brushing
+      his teeth 3 times a week maintains optimal dental health.
   vaccinations:
     title: Fully Vaccinated
     description: >
       Kody is fully vaccinated and ready to socialize!  Kody has been vaccinated
       continuously since 5 months old, the approximate age at which he
       was rescued.
-    vaccines:
-      - name: Canine Distemper (DHPPC)
-        frequency: 3yr
-        last_done: 2015-08-25
-        due_on: 2018-08-24
-      - name: Canine Rabies
-        frequency: 3yr
-        last_done: 2015-08-25
-        due_on: 2018-08-24
-      - name: Kennel Cough
-        last_done: 2016-08-19
-        due_on: 2017-08-18
-      - name: Leptospirosis
-        last_done: 2016-08-19
-        due_on: 2017-08-18
-      - name: Lyme
-        last_done: 2016-09-18
-        due_on: 2017-09-17
+    link:
+      label: Vaccination Record
+      url: /pdf/2017-08-19-kody-vaccination-certificate.pdf
   medical:
     title: Health
     description: >

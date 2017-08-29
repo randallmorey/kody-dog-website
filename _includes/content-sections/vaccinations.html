@@ -7,18 +7,21 @@
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-sm-pull-1">
         <h2 class="text-center">{{ site.data.all.content_modules.vaccinations.title }}</h2>
         <p>{{ site.data.all.content_modules.vaccinations.description }}</p>
+
         <h4>Vaccinations &amp; Due Dates</h4>
         <ul class="list-group">
-          {% for vaccine in site.data.all.content_modules.vaccinations.vaccines %}
-            <li class="list-group-item">
-              <span class="label label-success label-pill pull-right">{{ vaccine.due_on | date: "%B %-d, %Y" }}</span>
-              {{ vaccine.name }} {% if vaccine.frequency %}({{ vaccine.frequency }}){% endif %}
-            </li><!-- /.list-group-item -->
-          {% endfor %}
+            {% for vaccination in site.data.all.medical.vaccinations.all %}
+              <li class="list-group-item">
+                <span class="label label-success label-pill pull-right">{{ vaccination.due | date: "%d %B %Y"}}</span>
+                {{ vaccination.name }} ({{ vaccination.period.value }} {{ vaccination.period.unit }})
+              </li><!-- /.list-group-item -->
+            {% endfor %}
+
         </ul><!-- /.list-group -->
+
         <div class="text-center">
-          <a class="btn btn-default" href="/images/kody-vaccinations-2016.pdf" download>
-            Vaccination Record
+          <a class="btn btn-default" href="{{ site.data.all.content_modules.vaccinations.link.url }}" download>
+            {{ site.data.all.content_modules.vaccinations.link.label }}
           </a>
         </div>
       </div><!-- /.col -->
