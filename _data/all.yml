@@ -485,16 +485,18 @@ content_modules:
   training:
     title: Whip Smart Working Dog
     description: >
-      Kody is intelligent, focussed, and easy to train. He already possesses an
-      impressive repertoire of tricks and useful behaviors.  His next challenge?
-      Nosework 101!
+      Kody is intelligent, focussed, and easy to train. He loves being in class
+      and learning new things. After acing training and taking an advanced
+      manners class, he moved on to complete two sections of nosework. He now
+      spends his days running for hours in the Massachusetts countryside.
   care_feeding:
     title: Care and Feeding
     description: >
-      Diet, exercise, dental, and mental health is important.  Kody eats 3
-      meals a day.  He enjoys running, swimming, and playing at dog parks
-      2&ndash;4 times per week.  And while he merely tolerates it, brushing his
-      teeth 3 times a week helps to promote optimal dental health.
+      Diet, exercise, dental-, and mental-health are important. Kody eats 5
+      meals a day. He enjoys running, swimming, and playing at dog parks.
+      Since moving to his rural farmhouse in 2016, he is highly active outdoors
+      several hours nearly every day. And while he merely tolerates it, brushing
+      his teeth 3 times a week maintains optimal dental health.
   vaccinations:
     title: Fully Vaccinated
     description: >
@@ -502,7 +504,7 @@ content_modules:
       continuously since 5 months old, the approximate age at which he
       was rescued.
     link:
-      label: View Vaccination Certificate
+      label: Vaccination Record
       url: /pdf/2017-08-19-kody-vaccination-certificate.pdf
   medical:
     title: Health

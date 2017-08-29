@@ -5,6 +5,12 @@ jekyll:
   ports:
     - 4000:4000
 
+bash:
+  image: jekyll/jekyll
+  volumes:
+    - ./:/srv/jekyll
+  entrypoint: 'bash'
+
 bower:
   image: digitallyseamless/nodejs-bower-grunt
   working_dir: '/srv/jekyll'
