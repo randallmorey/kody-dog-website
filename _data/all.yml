@@ -40,20 +40,20 @@ organizations:
     name: Healthy Mouth
     type: animal dental health
     url: https://www.healthymouth.com
-  - &organization-sunset-hill
-    name: Sunset Hill Veterinary & Rehabilitation Center
+  - &organization-vet
+    name: Foxboro Animal Hospital
     type: animal clinic
-    url: http://sunsethillvet.com
-  - &organization-blue-pearl
-    name: Blue Pearl
+    url: https://www.foxboroanimalhospital.com
+  - &organization-emergency
+    name: Mass-RI Veterinary ER
     type: emergency animal hospital
     url: http://www.criticalcarevets.com
-    phone: 2063641660
+    phone: 5087301112
     address:
-      street_address: 11536 Lake City Way NE
-      locality: Seattle
-      region: WA
-      postal_code: 98125
+      street_address: 477 Milford Rd
+      locality: Swansea
+      region: MA
+      postal_code: 02777
       country_name: United States of America
 
 products:
@@ -420,10 +420,10 @@ medical:
       <<: *organization-trupanion
     policy_number: TU0001816531
   veterinarian:
-    <<: *organization-sunset-hill
+    <<: *organization-vet
   emergency:
     provider:
-      <<: *organization-blue-pearl
+      <<: *organization-emergency
   conditions: []
   prescriptions:
     - <<: *product-trifexis
@@ -452,27 +452,27 @@ medical:
         period:
           value: 3
           unit: year
-      - name: Bordatella
-        date: 2015-08-25
-        due: 2016-08-24
-        period:
-          value: 1
-          unit: year
-      - name: Leptospirosis
-        date: 2015-08-25
-        due: 2016-08-24
-        period:
-          value: 1
-          unit: year
       - name: DHPP (Distemper, Hepatits, Parvo, and Parainfluenza)
         date: 2015-08-25
         due: 2018-08-24
         period:
           value: 3
           unit: year
-      - name: Dewormer
-        date: 2015-08-25
-        due: 2016-08-24
+      - name: Bordatella
+        date: 2017-08-19
+        due: 2018-08-19
+        period:
+          value: 1
+          unit: year
+      - name: Leptospirosis
+        date: 2017-08-19
+        due: 2018-08-19
+        period:
+          value: 1
+          unit: year
+      - name: Borrelia (Lyme Disease)
+        date: 2017-08-19
+        due: 2018-08-19
         period:
           value: 1
           unit: year
@@ -503,7 +503,7 @@ content_modules:
       was rescued.
     link:
       label: View Vaccination Certificate
-      url: /pdf/2015-09-03-kody-vaccination-certificate.pdf
+      url: /pdf/2017-08-19-kody-vaccination-certificate.pdf
   medical:
     title: Health
     description: >
